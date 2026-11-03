@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우리동작 웹진</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Malgun Gothic", Arial, sans-serif;
+      background: #f2f4f8;
+      color: #222;
+      text-align: center;
+    }
+
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 32px;
+      color: #1d3557;
+    }
+
+    .intro {
+      margin-bottom: 32px;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .webzine-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .webzine-card {
+      display: block;
+      padding: 24px 20px;
+      background: white;
+      border-radius: 14px;
+      text-decoration: none;
+      color: #222;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .webzine-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    .webzine-card:focus-visible {
+      outline: 3px solid #2563eb;
+      outline-offset: 4px;
+    }
+
+    .webzine-card h2 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      color: #1d3557;
+    }
+
+    .webzine-card p {
+      margin: 0;
+      color: #666;
+      font-size: 15px;
+    }
+
+    footer {
+      margin-top: 36px;
+      color: #777;
+      font-size: 13px;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 27px; }
+      .webzine-card { padding: 20px 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="wrap">
+    <h1>우리동작 웹진</h1>
+    <p class="intro">
+      우리동작장애인자립생활센터의 다양한 소식을 전합니다.<br>
+      보고 싶은 웹진을 선택해 주세요.
+    </p>
+
+    <nav class="webzine-list" aria-label="웹진 호수별 목록">
+
+      <a class="webzine-card" href="https://jsh0902.github.io/vol.29/">
+        <h2>우리동작 웹진 29호</h2>
+        <p>29호 소식 보러가기 →</p>
+      </a>
+
+      <a class="webzine-card" href="https://jsh0902.github.io/vol.28/">
+        <h2>우리동작 웹진 28호</h2>
+        <p>28호 소식 보러가기 →</p>
+      </a>
+
+      <a class="webzine-card" href="https://jsh0902.github.io/vol.27/">
+        <h2>우리동작 웹진 27호</h2>
+        <p>27호 소식 보러가기 →</p>
+      </a>
+
+      <a class="webzine-card" href="https://jsh0902.github.io/vol.26/">
+        <h2>우리동작 웹진 26호</h2>
+        <p>26호 소식 보러가기 →</p>
+      </a>
+
+      <a class="webzine-card" href="https://jsh0902.github.io/vol.25/">
+        <h2>우리동작 웹진 25호</h2>
+        <p>25호 소식 보러가기 →</p>
+      </a>
+
+    </nav>
+
+    <footer>
+      우리동작장애인자립생활센터
+    </footer>
+  </main>
+
+</body>
+</html>
